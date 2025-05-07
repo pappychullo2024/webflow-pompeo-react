@@ -1,0 +1,125 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+/* CSS Modules feature */
+.list a:global(.active) {
+  color: rgba(180, 26, 26, 0.877);
+}
+
+.nav a:hover {
+  color: rgba(0, 0, 0, 0.856);
+}
+
+a.pompeoLogo:link {
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 0px;
+}
+
+.nav img {
+  width: 22px;
+  height: 24px;
+}
+.cartImg {
+  border-left: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 0px 5px 0px 20px;
+}
+.burgerIcon img {
+  padding-left: 20px;
+}
+
+.cartList {
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.cartList:hover {
+  color: rgba(0, 0, 0, 0.856);
+}
+
+.menu {
+  display: none;
+}
+
+.burgerIcon {
+  display: none;
+}
+/* media  */
+
+@media screen and (max-width: 990px) {
+  .ul li {
+    display: none;
+  }
+  .burgerIcon {
+    display: block;
+  }
+  .nav {
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 77px;
+    background-color: white;
+    width: 100%;
+    list-style-type: none;
+  }
+  .menu li {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.432);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px;
+    letter-spacing: 2px;
+  }
+  .navTwo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+  }
+}

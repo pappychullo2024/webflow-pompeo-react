@@ -1,0 +1,187 @@
+.sectionFour {
+  display: flex;
+  align-items: center;
+  padding: 250px 0px;
+  position: relative;
+}
+.product {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+}
+.contentImg {
+  width: 500px;
+  height: 220px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.ceramic img {
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+.goldVase img {
+  width: 250px;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  top: -160px;
+  left: 140px;
+}
+
+.description {
+  width: 50%;
+}
+
+.description h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.description p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.637);
+  width: 50%;
+  margin-bottom: 30px;
+}
+.differentFont {
+  font-family: "Playfair Display", sans-serif;
+  color: #b92236;
+  font-size: 70px;
+}
+
+.float {
+  position: absolute;
+  left: 4%;
+  top: 35%;
+}
+.link {
+  color: rgba(0, 0, 0, 0.637);
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 996px) {
+  .float {
+    display: none;
+  }
+
+  .description p {
+    width: 100%;
+  }
+
+  .sectionFour {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+  }
+
+  .product {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .description {
+    width: 80%;
+  }
+  .differentFont {
+    font-size: 60px;
+  }
+  .contentImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .sectionFour {
+    flex-direction: column;
+  }
+  .ceramic img {
+    top: -50px;
+    left: 130px;
+  }
+  .goldVase img {
+    bottom: 20px;
+    top: -150px;
+    left: 250px;
+  }
+  .product {
+    padding-bottom: 120px;
+  }
+  .description {
+    width: 100%;
+  }
+
+  .sectionFour {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .ceramic img {
+    left: 110px;
+  }
+  .goldVase img {
+    left: 230px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .ceramic img {
+    left: 50px;
+  }
+  .goldVase img {
+    left: 180px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .ceramic img {
+    left: 20px;
+  }
+  .goldVase img {
+    left: 140px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .ceramic img {
+    left: 0px;
+  }
+  .goldVase img {
+    left: 120px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .ceramic img {
+    width: 250px;
+    top: -10px;
+  }
+  .goldVase img {
+    width: 200px;
+    left: 100px;
+    top: -80px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ceramic img {
+    width: 200px;
+    top: 20px;
+  }
+  .goldVase img {
+    width: 170px;
+    left: 80px;
+    top: -60px;
+  }
+}

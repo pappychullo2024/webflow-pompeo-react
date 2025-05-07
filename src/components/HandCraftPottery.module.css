@@ -1,0 +1,86 @@
+.handCraft {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 200px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.handCraft img {
+  width: 69px;
+  height: 70px;
+}
+
+.handCraft p {
+  font-size: 15px;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.vase {
+  border: solid 2rem #d9a860;
+
+  background-color: #e3b561;
+}
+.mug {
+  border: solid 2rem #e45513;
+  background-color: #ee5c15;
+}
+.plate {
+  border: solid 2rem #9b0f10;
+  background-color: #9e1010f8;
+}
+.mug,
+.plate,
+.vase {
+  border-radius: 50%;
+  color: white;
+  padding: 40px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  text-align: center;
+}
+
+/* Media */
+
+@media screen and (max-width: 996px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .handCraft img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .handCraft {
+    justify-content: space-evenly;
+    margin: 0px 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .mug,
+  .plate,
+  .vase {
+    padding: 30px;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .handCraft img {
+    width: 50px;
+    height: 50px;
+  }
+  .mug,
+  .plate,
+  .vase {
+    padding: 23px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}

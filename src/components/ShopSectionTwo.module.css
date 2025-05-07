@@ -1,0 +1,36 @@
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 100px 0px;
+}
+
+.about p {
+  color: rgba(194, 15, 15, 0.575);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.about h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .sectionTwo {
+    padding: 100px 50px;
+  }
+  .float {
+    display: none;
+  }
+  .about p {
+    font-size: 13px;
+  }
+  .about h3 {
+    font-size: 30px;
+  }
+}

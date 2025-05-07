@@ -1,0 +1,103 @@
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 150px 0px;
+  position: relative;
+}
+.container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+  border-top: 1px solid rgba(0, 0, 0, 0.123);
+}
+.sectionDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.sectionDescription p {
+  color: rgb(194, 42, 42);
+  font-size: 15px;
+}
+.sectionDescription h2 {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.sectionDescription span {
+  font-family: "Playfair Display", sans-serif;
+  color: #b92236;
+  font-size: 70px;
+}
+
+.sectionAbout {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.sectionAbout div {
+  width: 28.3%;
+}
+.sectionAbout h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.sectionAbout p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.678);
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  width: 95%;
+}
+.float {
+  position: absolute;
+  left: 4%;
+  top: 37%;
+}
+
+/* media */
+
+@media screen and (max-width: 996px) {
+  .float {
+    display: none;
+  }
+  .sectionAbout p {
+    width: 100%;
+  }
+  .sectionAbout div {
+    width: 50%;
+  }
+
+  .sectionAbout {
+    gap: 50px;
+  }
+  .sectionTwo {
+    margin: 0px 50px;
+    gap: 60px;
+    padding: 100px 0px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .sectionAbout {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .sectionAbout div {
+    width: 100%;
+  }
+
+  .sectionDescription h2 {
+    font-size: 25px;
+  }
+  .sectionDescription p {
+    font-size: 12px;
+  }
+  .sectionDescription span {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,79 @@
+.form {
+  padding: 60px 60px 50px 50px;
+  border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+.inputArea {
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer {
+  display: flex;
+  gap: 13px;
+}
+.input {
+  background-color: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  padding: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-right: 30px;
+  background-position: 8px 8px;
+}
+.input:focus {
+  outline: none !important;
+  border-color: #719ece;
+}
+.name {
+  background-image: url("../name.png");
+}
+.email {
+  background-image: url("../email.png");
+}
+.text {
+  background-image: url("../text.png");
+  height: 170px;
+  background-size: 25px;
+}
+
+.form label {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.form h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 980px) {
+  .form {
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .inputContainer {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+    padding: 60px 10px 50px 10px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .form input {
+    width: 50%;
+  }
+  .form textarea {
+    width: 50%;
+  }
+  .form {
+    width: 70%;
+  }
+}

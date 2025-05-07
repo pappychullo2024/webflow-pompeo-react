@@ -1,0 +1,6 @@
+.float {
+  color: rgba(0, 0, 0, 0.164);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 23px;
+}

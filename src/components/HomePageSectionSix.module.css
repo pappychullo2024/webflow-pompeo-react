@@ -1,0 +1,84 @@
+.sectionSix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0px;
+  position: relative;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f4b65b;
+  background-image: url("/icon.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  border-radius: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+.sectionSix h2 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.differentFont {
+  font-family: "Playfair Display", sans-serif;
+  color: #b92236;
+  font-size: 70px;
+}
+.heading {
+  color: #b9223698;
+}
+
+.float {
+  position: absolute;
+  right: 4%;
+  top: 35%;
+}
+
+/* Media */
+
+@media screen and (max-width: 996px) {
+  .float {
+    display: none;
+  }
+  .sectionSix {
+    margin: 0px 50px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 510px) {
+  .sectionSix h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .sectionSix p {
+    font-size: 14px;
+  }
+  .differentFont {
+    font-size: 50px;
+  }
+  .sectionSix {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .sectionSix h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .sectionSix p {
+    font-size: 13px;
+  }
+  .differentFont {
+    font-size: 40px;
+  }
+  .sectionSix {
+    padding-right: 50px;
+  }
+}

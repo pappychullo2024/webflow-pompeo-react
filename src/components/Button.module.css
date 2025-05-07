@@ -1,0 +1,25 @@
+.btn {
+  background-color: #b01414;
+  color: white;
+  padding: 25px 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: black;
+  cursor: pointer;
+  animation: pulse 2s infinite alternate;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

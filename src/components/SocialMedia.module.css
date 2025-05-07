@@ -1,0 +1,43 @@
+.media {
+  display: flex;
+}
+
+.socialMedia {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dfdfdf;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px 3px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  opacity: 0.6;
+}
+.facebook:hover {
+  transition: all 0.9s;
+  opacity: 1;
+  background-color: rgb(8, 8, 192);
+  cursor: pointer;
+}
+.facebook {
+  background-image: url("../facebook.svg");
+}
+.twitter {
+  background-image: url("../twitter.svg");
+}
+.google {
+  background-image: url("../google.svg");
+}
+
+.twitter:hover {
+  transition: all 0.9s;
+  opacity: 1;
+  background-color: #1da1f2;
+  cursor: pointer;
+}
+.google:hover {
+  transition: all 0.5s;
+  opacity: 1;
+  background-color: red;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.imgContainer {
+  display: flex;
+  width: 80%;
+  gap: 10px;
+}
+.imgContainer img {
+  height: 90px;
+  width: 70px;
+}
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.cartFade {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  background: white;
+  opacity: 0.3;
+}
+
+.imgContainer h3 {
+  color: rgba(0, 0, 0, 0.527);
+  font-size: 15px;
+}
+.imgContainer p {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.527);
+  cursor: pointer;
+}
+.imgContainer strong {
+  font-size: 15px;
+}

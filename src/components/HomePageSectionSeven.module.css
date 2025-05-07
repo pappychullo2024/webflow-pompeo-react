@@ -1,0 +1,67 @@
+.sectionSeven {
+  background-color: #f0ecec48;
+  padding: 100px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+}
+.contacts {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 50px 250px 50px 180px;
+  gap: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.contacts figcaption {
+  font-size: 14px;
+  font-weight: 700;
+}
+.contacts img {
+  width: 40px;
+}
+
+.pompeoLogo {
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+  font-size: 34px;
+  color: black;
+  font-weight: 800;
+}
+
+.info p {
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 15px;
+  font-weight: s00;
+  font-family: "Roboto", sans-serif;
+}
+
+.contacts p {
+  color: rgba(0, 0, 0, 0.493);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  .contacts {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 50px 90px 50px 50px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .contacts {
+    flex-direction: column;
+    margin: 70px 50px 50px 50px;
+  }
+}

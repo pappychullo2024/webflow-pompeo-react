@@ -1,0 +1,17 @@
+.webflow {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  gap: 5px;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.webflow p {
+  color: black;
+}

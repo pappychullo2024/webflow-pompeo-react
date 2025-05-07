@@ -1,0 +1,79 @@
+.sectionFive {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.993) 13%,
+      rgba(255, 255, 255, 0) 57%
+    ),
+    url("../platesbackground.jpeg");
+  background-position: 0 0, 50% 33%;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+}
+.description {
+  width: 60%;
+}
+.pompeo {
+  color: rgba(194, 42, 42, 0.671);
+  font-size: 15px;
+}
+
+.description h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+.descriptionP {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.description span {
+  color: rgb(167, 23, 23);
+  text-decoration: underline;
+}
+
+/* media */
+
+@media screen and (max-width: 996px) {
+  .sectionFive {
+    padding-left: 50px;
+    justify-content: left;
+  }
+  .description {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .description {
+    width: 100%;
+  }
+
+  .sectionFive {
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 255, 255) 20%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url("../platesbackground.jpeg");
+    background-position: 0 0, 50% 33%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .description h2 {
+    font-size: 28px;
+  }
+  .description p {
+    font-size: 13px;
+  }
+  .descriptionP {
+    font-size: 15px;
+  }
+}

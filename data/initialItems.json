@@ -1,0 +1,49 @@
+{
+  "intialItems": [
+    {
+      "name": "Decor Plate",
+      "price": 65.0,
+      "image": " ",
+      "category": "Plate",
+      "id": 234567
+    },
+
+    {
+      "name": "Mint Pottery",
+      "price": 75.0,
+      "image": " ",
+      "category": "Vase",
+      "id": 234568
+    },
+    {
+      "name": "Set Of Potterys",
+      "price": 125.0,
+      "image": " ",
+      "category": "Vases",
+      "id": 234589
+    },
+
+    {
+      "name": "Orange Ceramic",
+      "price": 55.0,
+      "image": " ",
+      "category": "Vases",
+      "id": 234456
+    },
+    {
+      "name": "Dark Bowl",
+      "price": 115.0,
+      "image": " ",
+      "category": "Vases",
+      "id": 232436
+    },
+
+    {
+      "name": "Square Pottery",
+      "price": 75.0,
+      "image": " ",
+      "category": "Vases",
+      "id": 231236
+    }
+  ]
+}

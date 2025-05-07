@@ -1,0 +1,125 @@
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ececec5e;
+  padding: 100px 0px;
+  position: relative;
+}
+
+.description {
+  background-color: white;
+  width: 25%;
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+}
+.description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.432);
+  font-weight: 500;
+  line-height: 22px;
+  margin: 30px 0px;
+  width: 65%;
+}
+.description h4 {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.336);
+  font-weight: 500;
+  margin-top: 15px;
+}
+.description h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.image {
+  width: 90px;
+  height: 90px;
+  margin: 0px auto 15px auto;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.yakub {
+  background-image: url("../yakub.jpg");
+}
+.maria {
+  background-image: url("../maria.jpeg");
+}
+.basket {
+  background-image: url("../basket.jpg");
+}
+.crew {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+}
+.heading p {
+  color: rgba(172, 8, 8, 0.678);
+  font-size: 14px;
+}
+.heading h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0px 50px 0px;
+}
+.float {
+  position: absolute;
+  right: 4%;
+  top: 35%;
+}
+
+/* Media */
+
+@media screen and (max-width: 996px) {
+  .float {
+    display: none;
+  }
+  .crew {
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .description {
+    width: 100%;
+  }
+  .description p {
+    width: 100%;
+  }
+  .sectionThree {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .crew {
+    flex-direction: column;
+  }
+  .sectionThree {
+    align-items: inherit;
+    padding: 100px 50px;
+  }
+  .heading h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0px 50px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading p {
+    color: rgba(172, 8, 8, 0.678);
+    font-size: 12px;
+  }
+  .heading h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0px 50px 0px;
+  }
+}

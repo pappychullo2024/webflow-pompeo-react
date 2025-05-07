@@ -1,0 +1,48 @@
+.sectionOne {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 25%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../shopbackground.jpg");
+  background-position: 0 0, 50% 33%;
+  background-size: cover;
+  background-position: center;
+  padding: 160px 0px;
+  display: flex;
+  justify-content: center;
+}
+.about {
+  width: 65%;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 25px 0px 10px 0;
+}
+
+.about p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 500;
+  width: 40%;
+  line-height: 25px;
+}
+
+/* media */
+@media screen and (max-width: 996px) {
+  .about p {
+    width: 100%;
+  }
+
+  .about {
+    width: 100%;
+  }
+  .sectionOne {
+    justify-content: left;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
