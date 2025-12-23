@@ -17,6 +17,10 @@
   display: inline-block;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* media */
 
 @media screen and (max-width: 996px) {

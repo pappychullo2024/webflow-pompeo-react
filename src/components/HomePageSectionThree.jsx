@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+
+import { motion } from "framer-motion";
 import styles from "./HomePageSectionThree.module.css";
 import Float from "./Float";
 import { NavLink } from "react-router-dom";
@@ -6,7 +9,7 @@ const items = [
   {
     name: "Gold & Black Pottery",
     price: 95.0,
-    image: "goldblack.png ",
+    image: "goldblack.png",
     category: "Vases",
     id: 4455986,
   },
@@ -36,17 +39,45 @@ function HomePageSectionThree() {
   return (
     <section className={styles.container}>
       <div className={styles.sectionThree}>
-        <div className={styles.float}>
+        {/* FLOAT */}
+        <motion.div
+          className={styles.float}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: [0.42, 0, 1, 1] }}
+        >
           <Float>
             <p>FEATURED PRODUCTS</p>
           </Float>
-        </div>
+        </motion.div>
+
+        {/* FIRST PRODUCT */}
         {goldBlackPottery.map((item) => (
           <div className={styles.content} key={item.id}>
-            <div className={styles.contentImg}>
+            {/* IMAGE — LEFT → CENTER */}
+            <motion.div
+              className={styles.contentImg}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: [0.42, 0, 1, 1] }}
+            >
               <img src="/bigvase.png" alt="Gold and Black Pottery" />
-            </div>
-            <div className={styles.description}>
+            </motion.div>
+
+            {/* TEXT — RIGHT → CENTER */}
+            <motion.div
+              className={styles.description}
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.42, 0, 1, 1],
+                delay: 0.1,
+              }}
+            >
               <h3>{item.name}</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
@@ -54,21 +85,31 @@ function HomePageSectionThree() {
                 veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex
                 ea commodo consequatuisaute.
               </p>
+
               <NavLink
                 className={styles.link}
                 to={`/product/${item.id}?${formattedPottery}`}
               >
                 <p>View Details</p>
               </NavLink>
-            </div>
+            </motion.div>
           </div>
         ))}
+
+        {/* SECOND PRODUCT (REVERSED) */}
         {orangeCeramic.map((item) => (
           <div
             className={`${styles.content} ${styles.orangeCeramic}`}
             key={item.id}
           >
-            <div className={styles.description}>
+            {/* TEXT — LEFT → CENTER */}
+            <motion.div
+              className={styles.description}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: [0.42, 0, 1, 1] }}
+            >
               <h3>{item.name}</h3>
               <p>
                 Pri cu dico labores officiis, odio principes complectitur ad
@@ -76,16 +117,29 @@ function HomePageSectionThree() {
                 Aliquid definitiones id cum, ad meliore perpetua referrentur
                 sed. Quas suscipit ad mea verear vivendo tincidunt.
               </p>
+
               <NavLink
                 className={styles.link}
                 to={`/product/${item.id}?${formattedCeramic}`}
               >
                 <p>View Details</p>
               </NavLink>
-            </div>
-            <div className={`${styles.contentImg} ${styles.imgTwo}`}>
-              <img src="/orangeceramic.png" alt=" Orange Ceramic" />
-            </div>
+            </motion.div>
+
+            {/* IMAGE — RIGHT → CENTER */}
+            <motion.div
+              className={`${styles.contentImg} ${styles.imgTwo}`}
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.42, 0, 1, 1],
+                delay: 0.1,
+              }}
+            >
+              <img src="/orangeceramic.png" alt="Orange Ceramic" />
+            </motion.div>
           </div>
         ))}
       </div>

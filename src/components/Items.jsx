@@ -9,7 +9,9 @@ function Items({ item }) {
   return (
     <li className={styles.content}>
       <NavLink className={styles.link} to={`/product/${id}?${formattedName}`}>
-        <img src={`/${image}`} alt={name} />
+        <div className="imageWrapper">
+          <img src={`/${image}`} alt={name} />
+        </div>
 
         <p>{name}</p>
       </NavLink>
